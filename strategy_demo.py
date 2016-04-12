@@ -3,7 +3,7 @@ from easyquant import StrategyTemplate
 
 
 class Strategy(StrategyTemplate):
-    name = '测试策略1'
+    name = '测试策略Demo'
 
     def strategy(self, event):
         """:param event event.data 为所有股票的信息，结构如下
@@ -65,4 +65,6 @@ class Strategy(StrategyTemplate):
 
     def log_handler(self):
         """自定义 log 记录方式"""
-        return DefaultLogHandler(self.name, log_type='file', filepath='demo1.log')
+        ## return DefaultLogHandler(self.name, log_type='file', filepath='demo1.log')
+        """在屏幕上显示"""
+        return DefaultLogHandler(self.name, log_type='1')

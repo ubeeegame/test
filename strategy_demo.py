@@ -65,6 +65,6 @@ class Strategy(StrategyTemplate):
 
     def log_handler(self):
         """自定义 log 记录方式"""
-        ## return DefaultLogHandler(self.name, log_type='file', filepath='demo1.log')
+        return DefaultLogHandler(self.name, log_type='file', filepath='demo1.log')
         """在屏幕上显示"""
-        return DefaultLogHandler(self.name, log_type='1')
+        ## return DefaultLogHandler(self.name, log_type='1')
